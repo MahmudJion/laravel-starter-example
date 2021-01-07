@@ -36,6 +36,10 @@
                 <a class="underline text-sm text-gray-800 hover:text-gray-900" href="{{ route('register') }}">
                     {{ __('Register Here') }}
                 </a>
+
+                <x-jet-button class="ml-4">
+                    {{ __('Login') }}
+                </x-jet-button>
             </div>
 
             <div class="flex items-center justify-end mt-4">
@@ -44,10 +48,6 @@
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif
-
-                <x-jet-button class="ml-4">
-                    {{ __('Login') }}
-                </x-jet-button>
             </div>
         </form>
     </x-jet-authentication-card>
