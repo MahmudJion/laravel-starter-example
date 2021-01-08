@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
+// use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +26,9 @@ Route::get('/greeting', function () {
     return 'Hello World';
 });
 
-Route::resource('products', ProductController::class);
+Route::resource('products', 'ProductController');
+Route::resource('register', 'RegisterController');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
