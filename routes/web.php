@@ -27,7 +27,6 @@ Route::get('/greeting', function () {
 });
 
 Route::resource('products', 'ProductController');
-Route::resource('register', 'RegisterController');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
